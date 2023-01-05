@@ -42,7 +42,7 @@ spec:
   	volumes:
     	- name: nfs-client-root
       	nfs:
-        	server: (Control Plane IP)s
+        	server: (Control Plane IP)
         	path: /nfsvolume
 …
 =====
