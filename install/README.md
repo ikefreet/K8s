@@ -96,6 +96,9 @@ kube-node3  	Ready	<none>             	23m   v1.22.8
 ```
 
 <br>
+<br>
+<br>
+
 
 
 ### K8s 수동 설치
