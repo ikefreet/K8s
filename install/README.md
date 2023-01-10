@@ -95,7 +95,7 @@ kube-node2  	Ready	<none>             	23m   v1.22.8
 kube-node3  	Ready	<none>             	23m   v1.22.8
 ```
 
-
+<br>
 
 
 ### K8s 수동 설치
