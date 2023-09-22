@@ -6,5 +6,5 @@ Kubernetes 관련 Repository
 ```
 sudo vim ~/.vimrc
 syntax on
-autocmd FileType yaml setlocal ts=2 sts=2 sw-2 expandtab autoindent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab autoindent
 ```
