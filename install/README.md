@@ -101,7 +101,7 @@ kube-node3  	Ready	<none>             	23m   v1.22.8
 
 
 
-### K8s 수동 설치
+### Install with kubeadm (수동 설치)
 ```
 kubeadm을 이용한 Kubernetes Cluster 수동 구성
 
