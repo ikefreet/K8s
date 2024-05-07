@@ -20,7 +20,7 @@ ssh-copy-id vagrant@192.168.56.23
 Kubespray로 Kubernetes Cluster 배포 설정
 
 cd ~
-git clone -b v2.18.1 https://github.com/kubernetes-sigs/kubespray 
+git clone -b v2.18.1 https://github.com/kubernetes-sigs/kubespray (다른 버전 설치 시 -b의 버전 번경)
 cd ~/kubespray
 
 sudo apt-get update
