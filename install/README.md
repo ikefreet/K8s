@@ -26,7 +26,7 @@ cd ~/kubespray
 sudo apt-get update
 sudo apt-get install python3 python3-pip -y
 
-sudo pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt    ### host ubuntu 버전과 ansible의 python3 최소사양 버전이 높아 설치가 안될 경우 python3 venv를 이용
 
 cp -rfp inventory/sample/ inventory/mycluster
 vi inventory/mycluster/inventory.ini
