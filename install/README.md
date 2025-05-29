@@ -82,7 +82,7 @@ Kubernetes Cluster 배포
 
 ansible all -i inventory/mycluster/inventory.ini -m ping
 (ansible not found 발생 시, export PATH=$PATH:~/.local/bin)
-ansible all -i inventory/mycluster/inventory.ini -m apt -a "update_cache=yes" --become
+ansible all -i inventory/mycluster/inventory.ini -m apt -a "update_cache=yes" --become --ask-become-pass
 (missing sudo password 발생 시, --ask-become-pass 뒤에 추가 후 비밀번호 입력, time_error 날시 -e ansible_ssh_timeout=30 추가, str <= int 에러날시 -e ansible_ssh_timeout=30 제거)
 
 ansible-playbook -i inventory/mycluster/inventory.ini cluster.yml --become (kube-control get group error 나면 pip install ansible-core==2.14.11 시도)
