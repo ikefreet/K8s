@@ -97,11 +97,8 @@ kube-control1   Ready	control-plane,master   24m   v1.22.8
 kube-node1  	Ready	<none>             	23m   v1.22.8
 kube-node2  	Ready	<none>             	23m   v1.22.8
 kube-node3  	Ready	<none>             	23m   v1.22.8
-```
 
-<br>
-<br>
-<br>
+
 
 ** 만약 구성 도중 metallb 쪽에서의 문제가 발생하고 LoadBalancer IP가 잡히지 않을 경우,
 $ kubectl delete validatingwebhookconfigurations metallb-webhook-configuration
@@ -130,6 +127,12 @@ spec:
   ipAddressPools:
     - primary
 ===
+
+```
+
+<br>
+<br>
+<br>
 
 
 
