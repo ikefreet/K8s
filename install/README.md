@@ -103,6 +103,34 @@ kube-node3  	Ready	<none>             	23m   v1.22.8
 <br>
 <br>
 
+** 만약 구성 도중 metallb 쪽에서의 문제가 발생하고 LoadBalancer IP가 잡히지 않을 경우,
+$ kubectl delete validatingwebhookconfigurations metallb-webhook-configuration
+$ kubectl create -f metallb-config.yaml 재수행
+
+===
+metalb-config.ymal
+
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: primary
+  namespace: metallb-system
+spec:
+  addresses:
+    - [IP Range]
+  autoAssign: true
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: default
+  namespace: metallb-system
+spec:
+  ipAddressPools:
+    - primary
+===
+
 
 
 ### Install with kubeadm (수동 설치)
