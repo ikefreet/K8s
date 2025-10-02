@@ -9,3 +9,18 @@ nameserver 8.8.8.8
 search openstacklocal
 search svc.cluster.local cluster.local
 ```
+
+coreDNS로 설정
+
+```
+
+ControlPlane & Wokrer 노드 전부다
+
+sudo vim /etc/kubernetes/kubelet-config.yaml
+
+clsuter-dns: coredns 서비스 IP
+
+sudo systemctl daemon-reload
+sudo systemctl restart kubelet
+
+```
