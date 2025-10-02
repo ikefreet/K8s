@@ -23,4 +23,10 @@ clsuter-dns: coredns 서비스 IP
 sudo systemctl daemon-reload
 sudo systemctl restart kubelet
 
+kubectl edit -n kube-system cm coredns
+
+forward . /etc/resolv.conf -> forward . [외부 DNS IP]
+
+
+이후 모든 Pod 재기동 필요
 ```
